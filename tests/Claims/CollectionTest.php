@@ -3,22 +3,22 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Claims;
+namespace Kladislav\JWTAuth\Test\Claims;
 
-use Tymon\JWTAuth\Claims\Collection;
-use Tymon\JWTAuth\Claims\Expiration;
-use Tymon\JWTAuth\Claims\IssuedAt;
-use Tymon\JWTAuth\Claims\Issuer;
-use Tymon\JWTAuth\Claims\JwtId;
-use Tymon\JWTAuth\Claims\NotBefore;
-use Tymon\JWTAuth\Claims\Subject;
-use Tymon\JWTAuth\Test\AbstractTestCase;
+use Kladislav\JWTAuth\Claims\Collection;
+use Kladislav\JWTAuth\Claims\Expiration;
+use Kladislav\JWTAuth\Claims\IssuedAt;
+use Kladislav\JWTAuth\Claims\Issuer;
+use Kladislav\JWTAuth\Claims\JwtId;
+use Kladislav\JWTAuth\Claims\NotBefore;
+use Kladislav\JWTAuth\Claims\Subject;
+use Kladislav\JWTAuth\Test\AbstractTestCase;
 
 class CollectionTest extends AbstractTestCase
 {

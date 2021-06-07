@@ -3,38 +3,38 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Providers;
+namespace Kladislav\JWTAuth\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Namshi\JOSE\JWS;
-use Tymon\JWTAuth\Blacklist;
-use Tymon\JWTAuth\Claims\Factory as ClaimFactory;
-use Tymon\JWTAuth\Console\JWTGenerateSecretCommand;
-use Tymon\JWTAuth\Contracts\Providers\Auth;
-use Tymon\JWTAuth\Contracts\Providers\JWT as JWTContract;
-use Tymon\JWTAuth\Contracts\Providers\Storage;
-use Tymon\JWTAuth\Factory;
-use Tymon\JWTAuth\Http\Middleware\Authenticate;
-use Tymon\JWTAuth\Http\Middleware\AuthenticateAndRenew;
-use Tymon\JWTAuth\Http\Middleware\Check;
-use Tymon\JWTAuth\Http\Middleware\RefreshToken;
-use Tymon\JWTAuth\Http\Parser\AuthHeaders;
-use Tymon\JWTAuth\Http\Parser\InputSource;
-use Tymon\JWTAuth\Http\Parser\Parser;
-use Tymon\JWTAuth\Http\Parser\QueryString;
-use Tymon\JWTAuth\JWT;
-use Tymon\JWTAuth\JWTAuth;
-use Tymon\JWTAuth\JWTGuard;
-use Tymon\JWTAuth\Manager;
-use Tymon\JWTAuth\Providers\JWT\Lcobucci;
-use Tymon\JWTAuth\Providers\JWT\Namshi;
-use Tymon\JWTAuth\Validators\PayloadValidator;
+use Kladislav\JWTAuth\Blacklist;
+use Kladislav\JWTAuth\Claims\Factory as ClaimFactory;
+use Kladislav\JWTAuth\Console\JWTGenerateSecretCommand;
+use Kladislav\JWTAuth\Contracts\Providers\Auth;
+use Kladislav\JWTAuth\Contracts\Providers\JWT as JWTContract;
+use Kladislav\JWTAuth\Contracts\Providers\Storage;
+use Kladislav\JWTAuth\Factory;
+use Kladislav\JWTAuth\Http\Middleware\Authenticate;
+use Kladislav\JWTAuth\Http\Middleware\AuthenticateAndRenew;
+use Kladislav\JWTAuth\Http\Middleware\Check;
+use Kladislav\JWTAuth\Http\Middleware\RefreshToken;
+use Kladislav\JWTAuth\Http\Parser\AuthHeaders;
+use Kladislav\JWTAuth\Http\Parser\InputSource;
+use Kladislav\JWTAuth\Http\Parser\Parser;
+use Kladislav\JWTAuth\Http\Parser\QueryString;
+use Kladislav\JWTAuth\JWT;
+use Kladislav\JWTAuth\JWTAuth;
+use Kladislav\JWTAuth\JWTGuard;
+use Kladislav\JWTAuth\Manager;
+use Kladislav\JWTAuth\Providers\JWT\Lcobucci;
+use Kladislav\JWTAuth\Providers\JWT\Namshi;
+use Kladislav\JWTAuth\Validators\PayloadValidator;
 
 abstract class AbstractServiceProvider extends ServiceProvider
 {

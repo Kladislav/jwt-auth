@@ -3,18 +3,18 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Providers\Storage;
+namespace Kladislav\JWTAuth\Providers\Storage;
 
 use BadMethodCallException;
 use Illuminate\Contracts\Cache\Repository as CacheContract;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
-use Tymon\JWTAuth\Contracts\Providers\Storage;
+use Kladislav\JWTAuth\Contracts\Providers\Storage;
 
 class Illuminate implements Storage
 {

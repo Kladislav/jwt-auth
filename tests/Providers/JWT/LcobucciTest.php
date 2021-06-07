@@ -3,13 +3,13 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Providers\JWT;
+namespace Kladislav\JWTAuth\Test\Providers\JWT;
 
 use Exception;
 use InvalidArgumentException;
@@ -23,10 +23,10 @@ use Lcobucci\JWT\Token;
 use Lcobucci\JWT\Token\DataSet;
 use Lcobucci\JWT\Validation\Constraint;
 use Mockery;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
-use Tymon\JWTAuth\Providers\JWT\Lcobucci;
-use Tymon\JWTAuth\Test\AbstractTestCase;
+use Kladislav\JWTAuth\Exceptions\JWTException;
+use Kladislav\JWTAuth\Exceptions\TokenInvalidException;
+use Kladislav\JWTAuth\Providers\JWT\Lcobucci;
+use Kladislav\JWTAuth\Test\AbstractTestCase;
 
 class LcobucciTest extends AbstractTestCase
 {

@@ -3,16 +3,16 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth;
+namespace Kladislav\JWTAuth;
 
-use Tymon\JWTAuth\Contracts\Providers\Auth;
-use Tymon\JWTAuth\Http\Parser\Parser;
+use Kladislav\JWTAuth\Contracts\Providers\Auth;
+use Kladislav\JWTAuth\Http\Parser\Parser;
 
 /** @deprecated */
 class JWTAuth extends JWT
@@ -20,16 +20,16 @@ class JWTAuth extends JWT
     /**
      * The authentication provider.
      *
-     * @var \Tymon\JWTAuth\Contracts\Providers\Auth
+     * @var \Kladislav\JWTAuth\Contracts\Providers\Auth
      */
     protected $auth;
 
     /**
      * Constructor.
      *
-     * @param  \Tymon\JWTAuth\Manager  $manager
-     * @param  \Tymon\JWTAuth\Contracts\Providers\Auth  $auth
-     * @param  \Tymon\JWTAuth\Http\Parser\Parser  $parser
+     * @param  \Kladislav\JWTAuth\Manager  $manager
+     * @param  \Kladislav\JWTAuth\Contracts\Providers\Auth  $auth
+     * @param  \Kladislav\JWTAuth\Http\Parser\Parser  $parser
      *
      * @return void
      */
@@ -58,7 +58,7 @@ class JWTAuth extends JWT
     /**
      * Authenticate a user via a token.
      *
-     * @return \Tymon\JWTAuth\Contracts\JWTSubject|false
+     * @return \Kladislav\JWTAuth\Contracts\JWTSubject|false
      */
     public function authenticate()
     {
@@ -74,7 +74,7 @@ class JWTAuth extends JWT
     /**
      * Alias for authenticate().
      *
-     * @return \Tymon\JWTAuth\Contracts\JWTSubject|false
+     * @return \Kladislav\JWTAuth\Contracts\JWTSubject|false
      */
     public function toUser()
     {
@@ -84,7 +84,7 @@ class JWTAuth extends JWT
     /**
      * Get the authenticated user.
      *
-     * @return \Tymon\JWTAuth\Contracts\JWTSubject
+     * @return \Kladislav\JWTAuth\Contracts\JWTSubject
      */
     public function user()
     {

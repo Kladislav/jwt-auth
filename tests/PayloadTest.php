@@ -3,38 +3,38 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test;
+namespace Kladislav\JWTAuth\Test;
 
 use BadMethodCallException;
 use Mockery;
-use Tymon\JWTAuth\Claims\Audience;
-use Tymon\JWTAuth\Claims\Claim;
-use Tymon\JWTAuth\Claims\Collection;
-use Tymon\JWTAuth\Claims\Expiration;
-use Tymon\JWTAuth\Claims\IssuedAt;
-use Tymon\JWTAuth\Claims\Issuer;
-use Tymon\JWTAuth\Claims\JwtId;
-use Tymon\JWTAuth\Claims\NotBefore;
-use Tymon\JWTAuth\Claims\Subject;
-use Tymon\JWTAuth\Exceptions\PayloadException;
-use Tymon\JWTAuth\Payload;
-use Tymon\JWTAuth\Validators\PayloadValidator;
+use Kladislav\JWTAuth\Claims\Audience;
+use Kladislav\JWTAuth\Claims\Claim;
+use Kladislav\JWTAuth\Claims\Collection;
+use Kladislav\JWTAuth\Claims\Expiration;
+use Kladislav\JWTAuth\Claims\IssuedAt;
+use Kladislav\JWTAuth\Claims\Issuer;
+use Kladislav\JWTAuth\Claims\JwtId;
+use Kladislav\JWTAuth\Claims\NotBefore;
+use Kladislav\JWTAuth\Claims\Subject;
+use Kladislav\JWTAuth\Exceptions\PayloadException;
+use Kladislav\JWTAuth\Payload;
+use Kladislav\JWTAuth\Validators\PayloadValidator;
 
 class PayloadTest extends AbstractTestCase
 {
     /**
-     * @var \Mockery\MockInterface|\Tymon\JWTAuth\Validators\PayloadValidator
+     * @var \Mockery\MockInterface|\Kladislav\JWTAuth\Validators\PayloadValidator
      */
     protected $validator;
 
     /**
-     * @var \Tymon\JWTAuth\Payload
+     * @var \Kladislav\JWTAuth\Payload
      */
     protected $payload;
 
@@ -48,7 +48,7 @@ class PayloadTest extends AbstractTestCase
     /**
      * @param  array  $extraClaims
      *
-     * @return \Tymon\JWTAuth\Payload
+     * @return \Kladislav\JWTAuth\Payload
      */
     private function getTestPayload(array $extraClaims = [])
     {

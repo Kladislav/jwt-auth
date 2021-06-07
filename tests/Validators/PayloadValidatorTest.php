@@ -3,31 +3,31 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Validators;
+namespace Kladislav\JWTAuth\Test\Validators;
 
-use Tymon\JWTAuth\Claims\Collection;
-use Tymon\JWTAuth\Claims\Expiration;
-use Tymon\JWTAuth\Claims\IssuedAt;
-use Tymon\JWTAuth\Claims\Issuer;
-use Tymon\JWTAuth\Claims\JwtId;
-use Tymon\JWTAuth\Claims\NotBefore;
-use Tymon\JWTAuth\Claims\Subject;
-use Tymon\JWTAuth\Exceptions\InvalidClaimException;
-use Tymon\JWTAuth\Exceptions\TokenExpiredException;
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
-use Tymon\JWTAuth\Test\AbstractTestCase;
-use Tymon\JWTAuth\Validators\PayloadValidator;
+use Kladislav\JWTAuth\Claims\Collection;
+use Kladislav\JWTAuth\Claims\Expiration;
+use Kladislav\JWTAuth\Claims\IssuedAt;
+use Kladislav\JWTAuth\Claims\Issuer;
+use Kladislav\JWTAuth\Claims\JwtId;
+use Kladislav\JWTAuth\Claims\NotBefore;
+use Kladislav\JWTAuth\Claims\Subject;
+use Kladislav\JWTAuth\Exceptions\InvalidClaimException;
+use Kladislav\JWTAuth\Exceptions\TokenExpiredException;
+use Kladislav\JWTAuth\Exceptions\TokenInvalidException;
+use Kladislav\JWTAuth\Test\AbstractTestCase;
+use Kladislav\JWTAuth\Validators\PayloadValidator;
 
 class PayloadValidatorTest extends AbstractTestCase
 {
     /**
-     * @var \Tymon\JWTAuth\Validators\PayloadValidator
+     * @var \Kladislav\JWTAuth\Validators\PayloadValidator
      */
     protected $validator;
 

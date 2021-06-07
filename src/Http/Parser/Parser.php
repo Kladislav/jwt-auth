@@ -3,13 +3,13 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Http\Parser;
+namespace Kladislav\JWTAuth\Http\Parser;
 
 use Illuminate\Http\Request;
 
@@ -56,7 +56,7 @@ class Parser
     /**
      * Add a new parser to the chain.
      *
-     * @param array|\Tymon\JWTAuth\Contracts\Http\Parser $parsers
+     * @param array|\Kladislav\JWTAuth\Contracts\Http\Parser $parsers
      *
      * @return $this
      */

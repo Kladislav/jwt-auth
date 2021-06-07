@@ -3,27 +3,27 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Http;
+namespace Kladislav\JWTAuth\Test\Http;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Crypt;
 use Mockery;
-use Tymon\JWTAuth\Contracts\Http\Parser as ParserContract;
-use Tymon\JWTAuth\Http\Parser\AuthHeaders;
-use Tymon\JWTAuth\Http\Parser\Cookies;
-use Tymon\JWTAuth\Http\Parser\InputSource;
-use Tymon\JWTAuth\Http\Parser\LumenRouteParams;
-use Tymon\JWTAuth\Http\Parser\Parser;
-use Tymon\JWTAuth\Http\Parser\QueryString;
-use Tymon\JWTAuth\Http\Parser\RouteParams;
-use Tymon\JWTAuth\Test\AbstractTestCase;
+use Kladislav\JWTAuth\Contracts\Http\Parser as ParserContract;
+use Kladislav\JWTAuth\Http\Parser\AuthHeaders;
+use Kladislav\JWTAuth\Http\Parser\Cookies;
+use Kladislav\JWTAuth\Http\Parser\InputSource;
+use Kladislav\JWTAuth\Http\Parser\LumenRouteParams;
+use Kladislav\JWTAuth\Http\Parser\Parser;
+use Kladislav\JWTAuth\Http\Parser\QueryString;
+use Kladislav\JWTAuth\Http\Parser\RouteParams;
+use Kladislav\JWTAuth\Test\AbstractTestCase;
 
 class ParserTest extends AbstractTestCase
 {

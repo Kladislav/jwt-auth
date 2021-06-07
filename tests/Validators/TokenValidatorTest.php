@@ -3,22 +3,22 @@
 /*
  * This file is part of jwt-auth.
  *
- * (c) Sean Tymon <tymon148@gmail.com>
+ * (c) Sean Kladislav <tymon148@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Validators;
+namespace Kladislav\JWTAuth\Test\Validators;
 
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
-use Tymon\JWTAuth\Test\AbstractTestCase;
-use Tymon\JWTAuth\Validators\TokenValidator;
+use Kladislav\JWTAuth\Exceptions\TokenInvalidException;
+use Kladislav\JWTAuth\Test\AbstractTestCase;
+use Kladislav\JWTAuth\Validators\TokenValidator;
 
 class TokenValidatorTest extends AbstractTestCase
 {
     /**
-     * @var \Tymon\JWTAuth\Validators\TokenValidator
+     * @var \Kladislav\JWTAuth\Validators\TokenValidator
      */
     protected $validator;
 
@@ -37,7 +37,7 @@ class TokenValidatorTest extends AbstractTestCase
 
     /**
      * @test
-     * @dataProvider \Tymon\JWTAuth\Test\Validators\TokenValidatorTest::dataProviderMalformedTokens
+     * @dataProvider \Kladislav\JWTAuth\Test\Validators\TokenValidatorTest::dataProviderMalformedTokens
      *
      * @param  string  $token
      */
@@ -48,7 +48,7 @@ class TokenValidatorTest extends AbstractTestCase
 
     /**
      * @test
-     * @dataProvider \Tymon\JWTAuth\Test\Validators\TokenValidatorTest::dataProviderMalformedTokens
+     * @dataProvider \Kladislav\JWTAuth\Test\Validators\TokenValidatorTest::dataProviderMalformedTokens
      */
     public function it_should_throw_an_exception_when_providing_a_malformed_token($token)
     {
@@ -60,7 +60,7 @@ class TokenValidatorTest extends AbstractTestCase
 
     /**
      * @test
-     * @dataProvider \Tymon\JWTAuth\Test\Validators\TokenValidatorTest::dataProviderTokensWithWrongSegmentsNumber
+     * @dataProvider \Kladislav\JWTAuth\Test\Validators\TokenValidatorTest::dataProviderTokensWithWrongSegmentsNumber
      */
     public function it_should_return_false_when_providing_a_token_with_wrong_segments_number($token)
     {
@@ -69,7 +69,7 @@ class TokenValidatorTest extends AbstractTestCase
 
     /**
      * @test
-     * @dataProvider \Tymon\JWTAuth\Test\Validators\TokenValidatorTest::dataProviderTokensWithWrongSegmentsNumber
+     * @dataProvider \Kladislav\JWTAuth\Test\Validators\TokenValidatorTest::dataProviderTokensWithWrongSegmentsNumber
      */
     public function it_should_throw_an_exception_when_providing_a_malformed_token_with_wrong_segments_number($token)
     {
